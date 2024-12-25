@@ -1,0 +1,680 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body {
+	margin: 0px;
+	padding: 0px;
+    font-family: 'Kaushan Script', cursive;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 0.1rem;
+    margin-left: 3rem;
+    align-items: center;
+}
+
+.text {
+    display: flex;
+    gap: 2rem; 
+    margin-right: 4rem;
+}
+
+.text h3:hover {
+    cursor: pointer;
+    color: rgb(114, 113, 113);
+}
+
+.text h3:nth-child(1):hover {
+    color: #d00505;
+}
+
+.box {
+    position: relative;
+    width: 100%;
+    height: 420px;
+    background: #1c547d;
+    overflow: hidden;
+    animation: bgAnimate 10s linear infinite;
+}
+
+.tree {
+    position: absolute;
+    bottom: -52px;
+    width: 100%;
+    height: 100%;
+}
+
+.tree1 {
+    background: url("./images/tree1.png");
+    background-repeat: repeat-x;
+    animation: animate 15s linear infinite;
+    z-index: 3;
+}
+
+.tree2 {
+    background: url("./images/tree2.png");
+    background-repeat: repeat-x;
+    animation: animate 25s linear infinite;
+}
+
+.tree3 {
+    background: url("./images/tree3.png");
+    background-repeat: repeat-x;
+    animation: animate 45s linear infinite;
+}
+
+.sheep {
+    background: url("./images/sheep.png");
+    background-repeat: repeat-x;
+    animation: animate 45s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 1406px 0;
+    }
+}
+
+.snow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("./images/snow.png");
+    z-index: 4;
+    animation: snow 15s linear infinite;
+}
+
+@keyframes snow {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 0 768px;
+    }
+}
+
+.wish {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin: 5px 0 0;
+    padding: 0;
+    text-align: center;
+    font-size: 4em;
+    animation: colorAnimate 10s linear infinite;
+}
+
+.button {
+    margin: 10px 0 0;
+    padding: 10px 15px 10px 15px;
+    width: 20%;
+    /*margin-left: 620px;*/
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 1px solid grey;
+    font-weight: bold;
+    animation: textAnimate 10s linear infinite;
+}
+
+.button:hover {
+    background-color: rgb(197, 193, 193);
+}
+
+@keyframes bgAnimate {
+    0% {
+        background: #c30000;
+    }
+
+    25% {
+        background: #1c547d;
+    }
+
+    50% {
+        background: #00a504;
+    }
+
+    75% {
+        background: #e7b900;
+    }
+
+    100% {
+        background: #e4771d;
+    }
+}
+
+@keyframes colorAnimate {
+    0% {
+        color: #c30000;
+    }
+
+    25% {
+        color: #1c547d;
+    }
+
+    50% {
+        color: #00a504;
+    }
+
+    75% {
+        color: #e7b900;
+    }
+
+    100% {
+        color: #e4771d;
+    }
+}
+
+@keyframes textAnimate {
+    0% {
+        color: #c30000;
+    }
+
+    25% {
+        color: #1c547d;
+    }
+
+    50% {
+        color: #00a504;
+    }
+
+    75% {
+        color: #e7b900;
+    }
+
+    100% {
+        color: #e4771d;
+    }
+}
+
+.audio {
+    margin-top: 3rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 70px;
+    bottom: 0px;
+    font-weight: bold;
+    background-color: rgb(19, 19, 19);
+}
+
+.icons {
+    display: flex;
+}
+
+.fa {
+    padding: 12px;
+    font-size: 20px;
+    width: 16%;
+    height: 25%;
+    text-align: center;
+    text-decoration: none;
+    margin: 25px 5px;
+}
+  
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+} 
+
+.author {
+    animation: authorAnimate 10s linear infinite;
+}
+
+.author a {
+    text-decoration: none;
+}
+
+.copy {
+    margin-left: 4px;
+    animation: copyAnimate 10s linear infinite;
+}
+
+@keyframes authorAnimate {
+    0% {
+        color: #c30000;
+    }
+
+    25% {
+        color: #1c547d;
+    }
+
+    50% {
+        color: #00a504;
+    }
+
+    75% {
+        color: #e7b900;
+    }
+
+    100% {
+        color: #e4771d;
+    }
+}
+
+@keyframes copyAnimate {
+    0% {
+        color: #c30000;
+    }
+
+    25% {
+        color: #1c547d;
+    }
+
+    50% {
+        color: #00a504;
+    }
+
+    75% {
+        color: #e7b900;
+    }
+
+    100% {
+        color: #e4771d;
+    }
+}
+
+.modal-bg {
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+}
+
+.bg-active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal {
+    position: fixed;
+    top: 5%;
+    left: 425px;
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 550px;
+    max-width: 80%;
+}
+
+.modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.title {
+    font-size: 1.9rem;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.modal-close {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.modal-close:hover {
+    color: rgb(148, 133, 133);
+}
+
+.modal-body {
+    padding: 8px 25px;
+    line-height: 28px;
+    font-family: 'Libre Baskerville', serif;
+}
+
+/* Responsiveness */
+@media screen and (max-width:320px) {
+    .box {
+        height: 380px;
+    }
+
+    .tree {
+        bottom: -12px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+        margin-top: 10px;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap: 0.4rem;
+        margin-left: 1rem;
+        align-items: center;
+    }
+
+    .logo h5 {
+        font-size: 10px;
+    }
+    
+    .text {
+        display: none;
+    }
+
+    .button {
+        width: 40%;
+        padding: 6px 12px 6px 12px;
+        font-size: 1.1rem;
+        border-radius: 6px;
+        margin-top: 30px;
+    }
+
+    .footer {
+        margin-top: 76px;
+    }
+
+    .modal {
+        margin-left: -394px;
+        margin-top: 26px;
+        height: 75vh;
+    }
+
+    .title {
+        font-size: 1.3rem;
+    }
+
+    .modal-body {
+        font-size: 0.8rem;
+        line-height: 20px;
+        margin-top: -5px;
+    }
+}
+
+@media screen and (min-width:321px) and (max-width:375px) {
+    .box {
+        height: 380px;
+    }
+
+    .tree {
+        bottom: -12px;
+    }
+
+    h1 {
+        font-size: 2.4rem;
+        margin-top: 10px;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap: 0.4rem;
+        margin-left: 1rem;
+        align-items: center;
+    }
+
+    .logo h5 {
+        font-size: 12px;
+    }
+    
+    .text {
+        display: none;
+    }
+
+    .button {
+        width: 40%;
+        padding: 10px 15px 10px 15px;
+        font-size: 1.1rem;
+        border-radius: 6px;
+        margin-top: 30px;
+    }
+
+    .footer {
+        margin-top: 76px;
+    }
+
+    .modal {
+        margin-left: -389px;
+        margin-top: 26px;
+        height: 80vh;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .modal-body {
+        font-size: 0.8rem;
+        line-height: 22px;
+        margin-top: -2px;
+    }
+}
+
+@media screen and (min-width:376px) and (max-width:425px) {
+    .box {
+        height: 380px;
+    }
+
+    .tree {
+        bottom: -12px;
+    }
+
+    h1 {
+        font-size: 2.6rem;
+        margin-top: 10px;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap: 0.4rem;
+        margin-left: 1rem;
+        align-items: center;
+    }
+
+    .logo h5 {
+        font-size: 14px;
+    }
+    
+    .text {
+        display: none;
+    }
+
+    .button {
+        width: 40%;
+        padding: 10px 15px 10px 15px;
+        font-size: 1.1rem;
+        border-radius: 6px;
+        margin-top: 30px;
+    }
+
+    .footer {
+        margin-top: 76px;
+    }
+
+    .modal {
+        margin-left: -384px;
+        margin-top: 40px;
+        height: 64vh;
+    }
+
+    .title {
+        font-size: 1.7rem;
+    }
+
+    .modal-body {
+        font-size: 0.9rem;
+        line-height: 22px;
+        margin-top: -2px;
+    }
+}
+
+@media screen and (min-width:426px) and (max-width:768px) {
+    .box {
+        height: 500px;
+    }
+
+    .tree {
+        bottom: -132px;
+    }
+
+    h1 {
+        font-size: 4rem;
+        margin-top: 10px;
+    }
+
+    .logo h5 {
+        font-size: 15px;
+    }
+
+    .text {
+        font-size: 1rem;
+    }
+
+    .button {
+        width: 22%;
+        padding: 12px 20px 12px 20px;
+        font-size: 1.3rem;
+        border-radius: 6px;
+        margin-top: 35px;
+    }
+
+    .footer {
+        margin-top: 90px;
+    }
+
+    .modal {
+        margin-left: -322px;
+        margin-top: 120px;
+        height: 58vh;
+    }
+
+    .title {
+        font-size: 2.2rem;
+        margin-left: 10px;
+    }
+
+    .modal-body {
+        font-size: 1.2rem;
+        line-height: 32px;
+        margin-top: -2px;
+    }
+
+    .modal-close {
+        font-size: 2.3rem;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+    .box {
+        height: 750px;
+    }
+
+    .tree {
+        bottom: -382px;
+    }
+
+    h1 {
+        font-size: 5rem;
+        margin-top: 20px;
+    }
+
+    .logo h5 {
+        font-size: 20px;
+    }
+
+    .text {
+        font-size: 1.3rem;
+    }
+
+    .button {
+        width: 25%;
+        padding: 17px 25px 17px 25px;
+        font-size: 1.9rem;
+        border-radius: 6px;
+        margin-top: 20px;
+    }
+
+    .footer {
+        margin-top: 35px;
+        font-size: 1.7rem;
+    }
+
+    .modal {
+        margin-left: -328px;
+        margin-top: 140px;
+        height: 60vh;
+        width: 80%;
+    }
+
+    .title {
+        font-size: 2.8rem;
+        margin-left: 20px;
+    }
+
+    .modal-body {
+        font-size: 1.8rem;
+        line-height: 42px;
+        margin-top: -2px;
+        padding: 10px 35px;
+    }
+
+    .modal-close {
+        font-size: 2.5rem;
+    }
+}
+
